@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const links = [
     {
       title: "About",
@@ -21,13 +21,13 @@ function Navbar() {
     }
   ]
   return (
-    <nav className='flex py-2 px-10 justify-between items-center sticky inset-x-0 top-0 z-20 bg-slate-100'>
+    <nav className='flex shadow-sm py-5 px-5 sm:px-10 justify-between  items-center sticky inset-x-0 top-0 z-20 bg-slate-100'>
         <div className='flex basis-1/2'>
             <h2 className='text-lg font-bold'>
                 Meja Kerja
             </h2>
         </div>
-        <ul className={`flex md:flex-row md:w-auto md:h-auto md:static md:shadow-none  md:bg-transparent flex-col py-3 shadow-lg absolute w-[20%] bg-gray-50 top-12 transition-all duration-300 ease-in-out ${open ? "right-6" : "right-[-100%]"}`}>
+        <ul className={`flex md:flex-row md:w-auto md:h-auto md:static md:shadow-none md:opacity-100  md:bg-transparent flex-col right-6 py-3 shadow-lg absolute w-[30%] bg-slate-100 top-14 transition-all duration-300 ease-in-out ${open ? " opacity-0" : "opacity-100"}`}>
           {
             links.map((el, index) =>{
               return (

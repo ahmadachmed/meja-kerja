@@ -15,9 +15,11 @@ function Hero() {
                 <p>
                     We Build more than just experiences. We are a full services agency designing digital experiences for large and small business alike.
                 </p>
-                <div className='flex mt-5'>
+                <div className='flex mt-5 items-center cursor-pointer '>
                     <div className='mr-3'>
-                        {/* <box-icon name='right-arrow-circle'></box-icon> */}
+                        <span>
+                            <img src='icons/right-arrow.svg' className='h-4'/>
+                        </span>
                     </div>
                     <div>
                         <button className='text-sm font-bold'>
