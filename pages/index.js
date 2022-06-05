@@ -6,7 +6,7 @@ import Projects from '../components/Projects'
 
 export default function Home() {
   return (
-    <div className=''>
+    <>
        <Head>
         <title>Meja Kerja 1.0</title>
         <meta name="description" content="Create opportunity with join us" />
@@ -19,6 +19,6 @@ export default function Home() {
         <Companies/>
         <Projects/>
       </div>
-    </div>
+    </>
   )
 }
