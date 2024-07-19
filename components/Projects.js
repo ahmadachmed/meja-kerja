@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function Projects() {
@@ -23,12 +24,12 @@ function Projects() {
                     </h1>
               
                     <div className='flex gap-2 items-center py-3 text-cyan-50 text-xs font-light'>
-                        <img src='icons/right-arrow.svg' className='h-3 pl-2'/>
+                        <Image alt="right-arrow" width={0} height={0} sizes='100vw' src='icons/right-arrow.svg' className='h-3 w-auto pl-2'/>
                         <p>View Works</p>
                     </div>
                 </div>
                 <div className='w-1/2 sm:w-2/6 pr-5 py-5 relative'>
-                    <img src='images/real-estate.jpeg'></img>
+                    <Image alt='real-estate' width={0} height={0} sizes='100vw' src='/images/real-estate.jpeg' className='w-auto -auto'/>
                 </div>
             </div>
         </div>
@@ -37,7 +38,7 @@ function Projects() {
                 See all the work that we have done before
             </p>
             <span>
-                <img src='icons/right-arrow.svg' className='h-3 pl-2'/>
+                <Image alt='right-arrow' width={0} height={0} sizes='100vw' src='icons/right-arrow.svg' className='h-3 w-auto pl-2'/>
             </span>
         </div>
     </div>

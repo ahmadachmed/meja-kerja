@@ -7,17 +7,16 @@ import Projects from '../components/Projects'
 export default function Home() {
   return (
     <>
-       <Head>
+      <Head>
         <title>Meja Kerja 1.0</title>
         <meta name="description" content="Create opportunity with join us" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
       </Head>
-      <Navbar/>
+      <Navbar />
       <div className='py-3 px-5 xl:max-w-7xl justify-center mx-auto'>
-        <Hero/>
-        <Companies/>
-        <Projects/>
+        <Hero />
+        <Companies />
+        <Projects />
       </div>
     </>
   )
