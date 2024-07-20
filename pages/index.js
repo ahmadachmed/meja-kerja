@@ -3,8 +3,20 @@ import Companies from '../components/Companies'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
+import { useEffect } from 'react'
+import Lenis from 'lenis'
+import Footer from '../components/Footer'
 
 export default function Home() {
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+  }, [])
   return (
     <>
       <Head>
@@ -18,6 +30,7 @@ export default function Home() {
         <Companies />
         <Projects />
       </div>
+      <Footer/>
     </>
   )
 }
