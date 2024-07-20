@@ -10,12 +10,12 @@ export default function Footer() {
 
     return (
         <div
-            className='relative h-[600px]'
+            className='relative md:h-[600px] h-[700px]'
             style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
         >
-            <div className='fixed bottom-0 h-[600px] w-full'>
+            <div className='fixed bottom-0 md:h-[600px] h-[700px] w-full'>
                 <footer className='h-full bg-[#AAB6B6] text-[#022D42] items-end justify-between'>
-                    <div className="flex md:justify-between p-10 flex-col md:flex-row">
+                    <div className="flex md:justify-between md:p-10 py-10 px-5 flex-col md:flex-row">
                         <div className="w-full flex justify-between md:text-xl text-lg border-b-2 pb-5 md:border-b-0 border-opacity-30 border-[#022D42]">
                             <div className="w-full flex flex-col gap-y-5">
                                 {menu.map((el, index) => {
@@ -42,7 +42,7 @@ export default function Footer() {
                                 <p className="font-light">No spam – Unsubscribe anytime.</p>
                             </div>
                             <form className="space-y-4 w-full">
-                                <div className="flex gap-x-4">
+                                <div className="flex flex-col md:flex-row gap-y-4 gap-x-4">
                                     <div className="block w-full">
                                         <label htmlFor="username" className="block leading-6 ">User Name</label>
                                         <div className="block ring-1 ring-inset ring-[#022D42] focus-within:ring-2 focus-within:ring-inset">
