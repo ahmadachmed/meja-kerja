@@ -1,35 +1,8 @@
 import Link from 'next/link';
 import React, {useState } from 'react'
+import Social from './Social';
+import Menu from './Menu';
 
-const links = [
-  {
-    title: "About",
-    href: "/about"
-  },
-  {
-    title: "Works",
-    href: "/works"
-  },
-  {
-    title: "Services",
-    href: "/services"
-  },
-  {
-    title: "Contact",
-    href: "/contact"
-  }
-]
-
-const social = [
-  {
-    text: "Instagram",
-    link: "https://www.instagram.com/ahmadachmed/"
-  },
-  {
-    text: "Guthub",
-    link: "https://github.com/ahmadachmed/meja-kerja"
-  }
-]
 
 function Navbar() {
   const [open, setOpen] = useState(true);
@@ -37,6 +10,9 @@ function Navbar() {
   const toggleMenu = () => {
     setOpen(!open)
   }
+
+  const social = Social
+  const links = Menu
 
   return (
     <nav className='flex shadow-sm py-5 sm:px-10 justify-between  items-center sticky inset-x-0 top-0 z-20 bg-slate-100'>
