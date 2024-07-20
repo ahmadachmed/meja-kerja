@@ -44,23 +44,23 @@ export default function Footer() {
                             <form className="space-y-4 w-full">
                                 <div className="flex gap-x-4">
                                     <div className="block w-full">
-                                        <label for="username" className="block leading-6 ">User Name</label>
-                                        <div class="block ring-1 ring-inset ring-[#022D42] focus-within:ring-2 focus-within:ring-inset">
-                                            <input type="text" name="username" id="username" autocomplete="username" className="block w-full flex-1 border-0 bg-transparent py-1.5 pl-2 placeholder:opacity-55 placeholder:text-[#022D42] focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith" />
+                                        <label htmlFor="username" className="block leading-6 ">User Name</label>
+                                        <div className="block ring-1 ring-inset ring-[#022D42] focus-within:ring-2 focus-within:ring-inset">
+                                            <input type="text" name="username" id="username" autoComplete="username" className="block w-full flex-1 border-0 bg-transparent py-1.5 pl-2 placeholder:opacity-55 placeholder:text-[#022D42] focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith" />
                                         </div>
                                     </div>
                                     <div className="block w-full">
-                                        <label for="email" className="block leading-6 ">Email</label>
-                                        <div class="flex shadow-sm ring-1 ring-inset ring-[#022D42] focus-within:ring-2 focus-within:ring-inset">
-                                            <input type="email" name="email" id="email" autocomplete="mail@mail.com" className="block flex-1 border-0 bg-transparent py-1.5 pl-2 placeholder:opacity-55 placeholder:text-[#022D42] focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith" />
+                                        <label htmlFor="email" className="block leading-6 ">Email</label>
+                                        <div className="flex shadow-sm ring-1 ring-inset ring-[#022D42] focus-within:ring-2 focus-within:ring-inset">
+                                            <input type="email" name="email" id="email" autoComplete="mail@mail.com" className="block flex-1 border-0 bg-transparent py-1.5 pl-2 placeholder:opacity-55 placeholder:text-[#022D42] focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith" />
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <label for="email" className="block leading-6 ">Message</label>
-                                    <div class="mt-2">
-                                        <div class="flex shadow-sm ring-1 ring-inset ring-[#022D42] focus-within:ring-2 focus-within:ring-inset">
-                                            <textarea type="email" name="email" id="email" autocomplete="mail@mail.com" className="block flex-1 border-0 bg-transparent py-1.5 pl-2 placeholder:opacity-55 placeholder:text-[#022D42] focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith" />
+                                    <label htmlFor="email" className="block leading-6 ">Message</label>
+                                    <div className="mt-2">
+                                        <div className="flex shadow-sm ring-1 ring-inset ring-[#022D42] focus-within:ring-2 focus-within:ring-inset">
+                                            <textarea type="email" name="email" id="email" autoComplete="mail@mail.com" className="block flex-1 border-0 bg-transparent py-1.5 pl-2 placeholder:opacity-55 placeholder:text-[#022D42] focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith" />
                                         </div>
                                     </div>
                                 </div>
